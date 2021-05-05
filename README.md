@@ -4,7 +4,7 @@
 
 this is a calculator app built for Math-magicians Inc a fictional company using create-react-app
 
-![screenshot]()
+<!-- ![screenshot]() -->
 
 Additional description about the project and its features.
 
