@@ -1,8 +1,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Calculator App
 
-Calculator App
 this is a calculator app built for Math-magicians Inc a fictional company using create-react-app
 
 ![screenshot]()
