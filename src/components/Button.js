@@ -1,10 +1,16 @@
 /* eslint-disable linebreak-style */
 import React from 'react';
+import propTypes from 'prop-types';
 
-const Button = () => (
+const Button = ({ buttons }) => (
   <div>
-    <button type="button">This is a Button</button>
+    <button type="button">
+      { buttons }
+      {' '}
+    </button>
   </div>
 );
+
+Button.propTypes = { buttons: propTypes.string.isRequired };
 
 export default Button;
