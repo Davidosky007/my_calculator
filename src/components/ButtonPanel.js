@@ -5,12 +5,13 @@ import React from 'react';
 import propTypes from 'prop-types';
 import Button from './Button';
 
-const buttonGroups = [];
-buttonGroups.push(['AC', '+/-', '%', '÷']);
-buttonGroups.push(['7', '8', '9', 'x']);
-buttonGroups.push(['4', '5', '6', '-']);
-buttonGroups.push(['1', '2', '3', '+']);
-buttonGroups.push(['0', '.', '=']);
+const buttonGroups = [
+  ['AC', '+/-', '%', '÷'],
+  ['7', '8', '9', 'x'],
+  ['4', '5', '6', '-'],
+  ['1', '2', '3', '+'],
+  ['0', '.', '='],
+];
 
 const ButtonPanel = ({ handleClick }) => (
   <div>
