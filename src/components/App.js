@@ -2,31 +2,29 @@
 import React, { Component } from 'react';
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';
-import calculate from '../logic/calculate';
+import Calculate from '../logic/calculate';
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);
     this.state = {
-      total: null,
-      next: null,
+      total: '',
+      next: '',
       operation: null,
     };
   }
 
-  handleClick(btnName) {
-    console.log(btnName);
-    const newState = calculate(this.state, btnName);
+  handleClick(buttonName) {
+    const newState = Calculate(this.state, buttonName);
     this.setState(() => ({ ...newState }));
-    console.log(newState);
   }
 
   render() {
     const { total, next } = this.state;
     return (
       <>
-        <Display total={total} next={next} />
+        <Display result={(next && next.toString()) || (total && total.toString()) || '0'} />
         {' '}
         <ButtonPanel handleClick={this.handleClick} />
       </>
@@ -35,11 +33,3 @@ class App extends Component {
 }
 
 export default App;
-
-// const App = () => (
-//   <>
-//
-//   </>
-// );
-
-// export default App;

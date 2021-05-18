@@ -1,11 +1,11 @@
 /* eslint-disable no-unused-expressions */
 import operate from './operate';
 
-const calculate = (data, btnName) => {
+const calculate = (data, buttonName) => {
   const newData = { ...data };
   let { total, next, operation } = newData;
 
-  switch (btnName) {
+  switch (buttonName) {
     case 'AC':
       total = '';
       next = '';
@@ -17,8 +17,8 @@ const calculate = (data, btnName) => {
     case '÷':
     case '-':
     case '+':
-    case '×':
-      operation = !next ? btnName : null;
+    case 'x':
+      !next ? operation = buttonName : operation = null;
       break;
     case '%':
       next ? next = (next / 100).toString() : total = (total / 100).toString();
@@ -29,9 +29,9 @@ const calculate = (data, btnName) => {
       operation = null;
       break;
     default:
-      operation ? next += btnName : total += btnName;
+      operation ? next += buttonName : total += buttonName;
   }
-  return (total, next, operation);
+  return { total, next, operation };
 };
 
 export default calculate;
