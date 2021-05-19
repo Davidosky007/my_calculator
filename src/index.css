@@ -25,3 +25,8 @@ code {
     'Courier New',
     monospace;
 }
+
+.btn-panel {
+  display: flex;
+  padding: 0 auto;
+}

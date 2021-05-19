@@ -7,13 +7,13 @@ const operate = (numberOne, numberTwo, operator) => {
   let result = 0;
   switch (operator) {
     case '+':
-      result = numberOne.plus(numberTwo);
+      result = Big(numberOne).plus(numberTwo);
       break;
     case 'x':
-      result = numberOne.times(numberTwo);
+      result = Big(numberOne).times(numberTwo);
       break;
     case '-':
-      result = numberOne.minus(numberTwo);
+      result = Big(numberOne).minus(numberTwo);
       break;
     case '÷':
       result = numberTwo === '0' ? 'undefined' : Big(numberOne).div(numberTwo).toString();

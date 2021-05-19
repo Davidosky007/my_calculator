@@ -14,7 +14,7 @@ const buttonGroups = [
 ];
 
 const ButtonPanel = ({ handleClick }) => (
-  <div>
+  <div className="btn-panel">
     {buttonGroups.map((group, index) => (
       <div key={`group-${(index + 1)}`}>
         {group.map((button) => <Button name={button} handleClick={handleClick} key={button} />)}
