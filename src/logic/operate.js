@@ -5,8 +5,6 @@ const operate = (numberOne, numberTwo, operator) => {
   if (!numberOne || !numberTwo || !operator) return '0';
 
   let result = 0;
-  // const num1 = typeof numberOne !== 'number' ? Big(Number(numberOne)) : Big(numberOne);
-  // const num2 = typeof numberTwo !== 'number' ? Big(Number(numberTwo)) : Big(numberTwo);
   switch (operator) {
     case '+':
       result = numberOne.plus(numberTwo);
