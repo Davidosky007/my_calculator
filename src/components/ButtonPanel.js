@@ -6,6 +6,11 @@ import propTypes from 'prop-types';
 import styled from 'styled-components';
 import Button from './Button';
 
+const BtnPanel = styled.button`
+display: flex;
+
+`;
+
 const buttonGroups = [
   ['AC', '+/-', '%', '÷'],
   ['7', '8', '9', 'x'],
@@ -15,13 +20,13 @@ const buttonGroups = [
 ];
 
 const ButtonPanel = ({ handleClick }) => (
-  <div className="btn-panel">
+  <BtnPanel>
     {buttonGroups.map((group, index) => (
       <div key={`group-${(index + 1)}`}>
         {group.map((button) => <Button name={button} handleClick={handleClick} key={button} />)}
       </div>
     ))}
-  </div>
+  </BtnPanel>
 );
 
 ButtonPanel.protoTypes = {
