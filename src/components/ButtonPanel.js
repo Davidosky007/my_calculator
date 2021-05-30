@@ -3,32 +3,66 @@
 /* eslint-disable linebreak-style */
 import React from 'react';
 import propTypes from 'prop-types';
-import styled from 'styled-components';
 import Button from './Button';
 
-const BtnPanel = styled.button`
-display: flex;
-
-`;
-
-const buttonGroups = [
-  ['AC', '+/-', '%', '÷'],
-  ['7', '8', '9', 'x'],
-  ['4', '5', '6', '-'],
-  ['1', '2', '3', '+'],
-  ['0', '.', '='],
-];
+const buttonGroups = {
+  1: ['AC', '+/-', '%', '÷'],
+  2: ['7', '8', '9', 'x'],
+  3: ['4', '5', '6', '-'],
+  4: ['1', '2', '3', '+'],
+  5: ['0', '.', '='],
+};
 
 const ButtonPanel = ({ handleClick }) => (
-  <BtnPanel>
-    {buttonGroups.map((group, index) => (
-      <div key={`group-${(index + 1)}`}>
-        {group.map((button) => <Button name={button} handleClick={handleClick} key={button} />)}
-      </div>
-    ))}
-  </BtnPanel>
-);
+  <div className="btns">
+    <div className="btn_grp">
+      {buttonGroups[1].map((btn) => (
+        <Button
+          name={btn}
+          handleClick={handleClick}
+          key={btn}
+        />
+      ))}
+    </div>
+    <div className="btn_grp">
+      {buttonGroups[2].map((btn) => (
+        <Button
+          name={btn}
+          handleClick={handleClick}
+          key={btn}
+        />
+      ))}
+    </div>
+    <div className="btn_grp">
+      {buttonGroups[3].map((btn) => (
+        <Button
+          name={btn}
+          handleClick={handleClick}
+          key={btn}
+        />
+      ))}
+    </div>
+    <div className="btn_grp">
+      {buttonGroups[4].map((btn) => (
+        <Button
+          name={btn}
+          handleClick={handleClick}
+          key={btn}
+        />
+      ))}
+    </div>
+    <div className="btn_grp2">
+      {buttonGroups[5].map((btn) => (
+        <Button
+          name={btn}
+          handleClick={handleClick}
+          key={btn}
+        />
+      ))}
+    </div>
 
+  </div>
+);
 ButtonPanel.protoTypes = {
   handleClick: propTypes.func,
 };

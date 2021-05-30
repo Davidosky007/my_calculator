@@ -14,6 +14,9 @@ const StyledDisCompo = styled.section`
 background-color: gray;
 height: 100px;
 padding: 15px;
+width: 400px;
+margin: 0 auto;
+border-radius: 30px;
 `;
 
 const Display = (props) => {

@@ -16,7 +16,7 @@ const operate = (numberOne, numberTwo, operator) => {
       result = Big(numberOne).minus(numberTwo);
       break;
     case '÷':
-      result = numberTwo === '0' ? 'undefined' : Big(numberOne).div(numberTwo).toString();
+      result = numberTwo === '0' ? 'Divide by zero error' : Big(numberOne).div(numberTwo).toString();
       break;
 
     default:

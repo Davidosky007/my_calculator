@@ -7,7 +7,8 @@ import Calculate from '../logic/calculate';
 
 const StyledApp = styled.section`
 display: inline-block;
-
+width: 700px;
+float: right;
 
 `;
 
@@ -23,11 +24,14 @@ const App = () => {
     setState(() => ({ ...newState }));
   };
   return (
-    <StyledApp>
-      <Display result={(state.next && state.next.toString()) || (state.total && state.total.toString()) || '0'} />
-      {' '}
-      <ButtonPanel handleClick={handleClick} />
-    </StyledApp>
+    <>
+      <h2 className="app_head">Let us do math!</h2>
+      <StyledApp>
+        <Display result={(state.next && state.next.toString()) || (state.total && state.total.toString()) || '0'} />
+        {' '}
+        <ButtonPanel handleClick={handleClick} />
+      </StyledApp>
+    </>
   );
 };
 
