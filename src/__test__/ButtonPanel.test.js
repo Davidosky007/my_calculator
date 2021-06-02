@@ -1,5 +1,4 @@
 /* eslint-disable linebreak-style */
-import { render, screen } from '@testing-library/react';
 import { create } from 'react-test-renderer';
 import '@testing-library/jest-dom';
 import ButtonPannel from '../components/ButtonPanel';
