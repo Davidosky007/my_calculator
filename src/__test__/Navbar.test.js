@@ -3,7 +3,6 @@ import { fireEvent, render, screen } from '@testing-library/react';
 import { create } from 'react-test-renderer';
 import {
   BrowserRouter,
-  BrowserRouter as Router,
 } from 'react-router-dom';
 import '@testing-library/jest-dom';
 import Navbar from '../components/Navbar';
