@@ -1,0 +1,190 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ButtonPanel component test render Button component properly 1`] = `
+<button
+  className="btn button"
+  onClick={[Function]}
+  type="button"
+>
+   
+</button>
+`;
+
+exports[`ButtonPanel component test render ButtonPanel component properly 1`] = `
+<div
+  className="btns"
+>
+  <div
+    className="btn_grp"
+  >
+    <button
+      className="btn button"
+      onClick={[Function]}
+      type="button"
+    >
+      AC
+       
+    </button>
+    <button
+      className="btn button"
+      onClick={[Function]}
+      type="button"
+    >
+      +/-
+       
+    </button>
+    <button
+      className="btn button"
+      onClick={[Function]}
+      type="button"
+    >
+      %
+       
+    </button>
+    <button
+      className="btn button"
+      onClick={[Function]}
+      type="button"
+    >
+      ÷
+       
+    </button>
+  </div>
+  <div
+    className="btn_grp"
+  >
+    <button
+      className="btn button"
+      onClick={[Function]}
+      type="button"
+    >
+      7
+       
+    </button>
+    <button
+      className="btn button"
+      onClick={[Function]}
+      type="button"
+    >
+      8
+       
+    </button>
+    <button
+      className="btn button"
+      onClick={[Function]}
+      type="button"
+    >
+      9
+       
+    </button>
+    <button
+      className="btn button"
+      onClick={[Function]}
+      type="button"
+    >
+      x
+       
+    </button>
+  </div>
+  <div
+    className="btn_grp"
+  >
+    <button
+      className="btn button"
+      onClick={[Function]}
+      type="button"
+    >
+      4
+       
+    </button>
+    <button
+      className="btn button"
+      onClick={[Function]}
+      type="button"
+    >
+      5
+       
+    </button>
+    <button
+      className="btn button"
+      onClick={[Function]}
+      type="button"
+    >
+      6
+       
+    </button>
+    <button
+      className="btn button"
+      onClick={[Function]}
+      type="button"
+    >
+      -
+       
+    </button>
+  </div>
+  <div
+    className="btn_grp"
+  >
+    <button
+      className="btn button"
+      onClick={[Function]}
+      type="button"
+    >
+      1
+       
+    </button>
+    <button
+      className="btn button"
+      onClick={[Function]}
+      type="button"
+    >
+      2
+       
+    </button>
+    <button
+      className="btn button"
+      onClick={[Function]}
+      type="button"
+    >
+      3
+       
+    </button>
+    <button
+      className="btn button"
+      onClick={[Function]}
+      type="button"
+    >
+      +
+       
+    </button>
+  </div>
+  <div
+    className="btn_grp2"
+  >
+    <button
+      className="btn button"
+      onClick={[Function]}
+      type="button"
+    >
+      0
+       
+    </button>
+    <button
+      className="btn button"
+      onClick={[Function]}
+      type="button"
+    >
+      .
+       
+    </button>
+    <button
+      className="btn button"
+      onClick={[Function]}
+      type="button"
+    >
+      =
+       
+    </button>
+  </div>
+</div>
+`;

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test Display component render Display component properly 1`] = `
+<section
+  className="sc-gtsrHT ilhZDh"
+>
+  <h2
+    className="sc-bdnxRM gNjEKx"
+  >
+    0
+  </h2>
+</section>
+`;

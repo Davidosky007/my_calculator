@@ -28,16 +28,39 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
+This app requires Nodejs. if you don't have it installed yet, install it and do the following
+commands in your terminal.
+
+### Prerequisites
+
+NodeJs
+
 ### Setup
 
-### Install
+- Clone this repository with: git clone `https://github.com/Davidosky007/my_calculator.git` using your terminal or command line.
+
+- Change to the project directory by entering cd "my_calculator" in the terminal
+
+- Next run npm install to install the necessary dependencies
+
+- Finally run 'npm start' to start the application
 
 ### Usage
 
+Start server with:
+
+```
+    npm start
+```
+
 ### Run tests
 
-### Deployment
+```
+npm test
+```
 
+### Deployment
+Heroku
 ## Author
 
 👤 **David Bassey**
